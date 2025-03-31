@@ -1,0 +1,41 @@
+{
+    "name": "interview-intern-withdrawals",
+    "description": "",
+    "version": "1.0.0",
+    "license": "ISC",
+    "main": "dist/app.js",
+    "scripts": {
+        "start": "node dist/app.js",
+        "lint": "eslint --ext '.ts' src test",
+        "lint-fix": "eslint --fix --ext '.ts' src test",
+        "build": "rimraf dist && npm run -s build-ts",
+        "watch": "rimraf dist && npm run -s watch-ts",
+        "build-ts": "tsc",
+        "watch-ts": "tsc -w"
+    },
+    "dependencies": {
+        "chalk": "^4.1.2"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.17.16",
+        "@types/node": "^22.13.14",
+        "@typescript-eslint/eslint-plugin": "^8.28.0",
+        "@typescript-eslint/parser": "^8.28.0",
+        "eslint": "^9.23.0",
+        "eslint-config-prettier": "^10.1.1",
+        "eslint-plugin-prettier": "^5.2.5",
+        "prettier": "^3.5.3",
+        "rimraf": "^6.0.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    },
+    "mocha": {
+        "require": [
+            "ts-node/register/transpile-only"
+        ],
+        "timeout": 20000,
+        "extension": [
+            "ts"
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+[
+    { "id": 1, "amount": 2, "provider": "Trustly", "user_id": "user1111", "state": "Approved", "decidedBy": 1 },
+    { "id": 2, "amount": 2, "provider": "Trustly", "user_id": "user1111", "state": "Declined", "decidedBy": 2  },
+    { "id": 3, "amount": 2, "provider": "Trustly", "user_id": "user1111", "state": "Approved", "decidedBy": 2  }
+]
